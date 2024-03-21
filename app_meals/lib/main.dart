@@ -9,20 +9,24 @@ Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Vamos cozinhar?',
       theme: ThemeData(
-        primarySwatch : Colors.red,
-        accentColor:Colors.amber,
-        fontFamily: 'Raleway',
-        textTheme:ThemeData.light().textTheme.copyWith(
-          headline6: TextStyle(
-            fontSize: 20,
-            fontFamily:'RobotoCondensed',
-          )
-        )
-        
-
-      ),   
-      home: CategoriesScrens(),
-    );
+       colorScheme: ColorScheme.fromSwatch().copyWith(
+        primary: Colors.black,
+        secondary: Colors.amber,
+       ),
+       canvasColor: const Color.fromARGB(255,254,229, 1),
+       fontFamily: 'Raleway',
+       textTheme: ThemeData.light().textTheme.copyWith(
+        headline6: const TextStyle(
+          fontSize: 20,
+          fontFamily:'RobotoCondensed'
+          ),
+        ),
+       ),
+        home: const CategoriesScrens(),
+      );
+      
+     
+    
   }
 }
  
