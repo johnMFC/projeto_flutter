@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'Screns/categores_screns.dart';
- 
+import 'package:meals/Screns/categories_meals_screen.dart';
+import 'Screns/categores_screns.dart '; 
+import './utils/app_routes.dart';
+
 void main() => runApp(MyApp());
  
 class MyApp extends StatelessWidget {
   @override
 Widget build(BuildContext context) {
+  
     return MaterialApp(
       title: 'Vamos cozinhar?',
       theme: ThemeData(
@@ -22,7 +25,11 @@ Widget build(BuildContext context) {
           ),
         ),
        ),
-        home: const CategoriesScrens(),
+        home: const CategoriesScreen(),
+        routes: {
+          AppRoutes.Home: (ctx) => CategoriesScreen(),
+          AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
+        },
       );
       
      

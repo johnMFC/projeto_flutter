@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import '../compoents/category_item.dart';
 import '../data/dummy_data.dart';
 
-class CategoriesScrens extends StatelessWidget {
-  const CategoriesScrens({super.key});
+class CategoriesScreen extends StatelessWidget {
+  const CategoriesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
