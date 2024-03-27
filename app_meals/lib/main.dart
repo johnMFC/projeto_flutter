@@ -25,7 +25,7 @@ Widget build(BuildContext context) {
           ),
         ),
        ),
-        home: const CategoriesScreen(),
+       // home: const CategoriesScreen(),
         routes: {
           AppRoutes.Home: (ctx) => CategoriesScreen(),
           AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
@@ -39,3 +39,4 @@ Widget build(BuildContext context) {
  
 
  
+
