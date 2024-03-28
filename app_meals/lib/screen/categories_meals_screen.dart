@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/category.dart';
 import '../data/dummy_data.dart';
 
+
 class CategoriesMealsScreen extends StatelessWidget {
   const CategoriesMealsScreen({Key? key}) : super(key: key);
 
@@ -26,4 +27,3 @@ class CategoriesMealsScreen extends StatelessWidget {
     );
   }
 }
-6
