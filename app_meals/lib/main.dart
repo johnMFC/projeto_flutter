@@ -4,7 +4,6 @@ import 'package:meals/screen/categores_screen.dart';
 import 'utils/app_routes.dart';
 
 
-
 void main() => runApp(MyApp());
  
 class MyApp extends StatelessWidget {
