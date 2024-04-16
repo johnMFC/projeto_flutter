@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'screen/categories_meals_screen.dart';
-import 'package:meals/screen/categores_screen.dart';
+import './screen/meal_detail_screen.dart';
+import './screen/categores_screen.dart';
 import 'utils/app_routes.dart';
+
 
 
 void main() => runApp(MyApp());
@@ -30,7 +32,33 @@ Widget build(BuildContext context) {
         routes: {
           AppRoutes.Home: (ctx) => CategoriesScreen(),
           AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
+          AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
         },
+        /*
+        onGenerateRoute: (settings){
+          if(settings.name == '/alguma-coisa'){
+            return null;
+          } else if (settings.name == 'outra-coisa'){
+            return null;
+          }else {
+            return MaterialPageRoute(
+              builder: (_){
+                return CategoriesScreen();
+              }
+              );
+          }
+
+        }
+        onUnknownRoute: (settings) {
+          return MaterialPageRoute (
+            builder (_){
+              return CategoriesScreen();
+              )
+            }
+          )
+        },
+
+        */
       );
       
      
