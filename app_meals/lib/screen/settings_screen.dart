@@ -6,7 +6,7 @@ class SettingsScreen extends StatefulWidget {
     final Function (Settings) onSettingsChanged;
     const SettingsScreen (this.onSettingsChanged);
 
-  const SettingsScreen({super.key});
+
 
   @override
   State<SettingsScreen> createState() => _SettingsScreenState();

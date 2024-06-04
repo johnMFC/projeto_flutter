@@ -24,7 +24,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final List<Meal> _availableMeals = dummyMeals;
+    List<Meal> _availableMeals = dummyMeals;
 
   void _filterMeals(Settings settings) {
     setState(() {
@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
         AppRoutes.CATEGORIES_MEALS: (ctx) =>
         CategoriesMealsScreen(_availableMeals),
         AppRoutes.MEAL_DETAIL: (ctx) => const MealDetailScreen(),
-        AppRoutes.SETTINGS: (ctx) => const SettingsScreen(_filterMeals),
+        AppRoutes.SETTINGS: (ctx) =>  SettingsScreen(_filterMeals),
       },
     );
   }
